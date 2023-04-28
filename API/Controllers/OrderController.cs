@@ -256,7 +256,6 @@ namespace API.Controllers
         [EnableQuery]
         public IQueryable<ViewOrder> GetOrders()
         {
-
             return unitOfWork.OrderRepository.GetViewOrders().OrderByDescending(q => q.Date);
         }
         [Route("api/order/Items/{Id}")]

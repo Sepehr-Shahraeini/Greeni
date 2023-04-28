@@ -50,7 +50,9 @@ namespace API
 
                     //Amount is not used. you should not assign a value to this property.
                     paymentRequest.Amount =(long) Convert.ToDecimal( vieworder.TotalAmount*10);
-                    paymentRequest.Amount = 1000;
+
+
+                   // paymentRequest.Amount = 1000;
                     //Order Id MUST be UNIQUE at all times. if a duplicated Order Id is received from your request, you will get Status=-112
                     paymentRequest.OrderId = vieworder.Id;
 
